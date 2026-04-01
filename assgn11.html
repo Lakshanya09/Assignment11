@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Operators Example</title>
+
+    <head>
+    <style>
+        body {
+            background-color:lightblue;
+        }
+    </style>
+</head>
+</head>
+
+<body>
+<center>
+<h1>Operators Example</h2>
+</center>
+
+<br>
+<h2>Pre-Increment Example</h2>
+
+<input type="number" id="num1" placeholder="Enter a number">
+
+<br><br>
+
+<button onclick="preInc()">Increase</button>
+
+<p id="result1"></p>
+
+<h2>Post-Increment Example</h2>
+
+<input type="number" id="num2" placeholder="Enter a number">
+
+<br><br>
+
+<button onclick="postInc()">Increase</button>
+
+<p id="result2"></p>
+
+<script>
+    function preInc() {
+        let a = Number(document.getElementById("num1").value);
+
+        let b = ++a; // pre-increment
+
+        document.getElementById("result1").innerHTML = "After increment:: " + b;
+    }  
+     
+    function postInc() {
+    let a = Number(document.getElementById("num2").value);
+
+    let used = a;   // store original value
+    a++;            // increment after
+
+    document.getElementById("result2").innerHTML =
+        "Used value: " + used + " , After increment: " + a;
+}
+  
+    
+    
+    
+    
+</script>
+
+</body>
+</html>
